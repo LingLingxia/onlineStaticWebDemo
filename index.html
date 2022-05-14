@@ -16,6 +16,12 @@
     </style>
 </head>
 <body>
-    <img src="./cut.jpg" />
+    <img id="myImg" src="./cut.jpg" />
+    <script>
+        let timeStamp = new Date().getTime();
+        let link = "./cut.jpg?u="+timeStamp;
+        document.querySelector("#myImg").setAttribute("src",link);
+    </script>
 </body>
+
 </html>
